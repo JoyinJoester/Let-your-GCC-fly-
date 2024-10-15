@@ -1,6 +1,6 @@
 # 让你的GCC飞起来！！！
 
-![GitHub Repo stars](https://img.shields.io/github/stars/Bill-Haku/kawaii-gcc) ![GitHub contributors](https://img.shields.io/github/contributors/Bill-Haku/kawaii-gcc) ![GitHub License](https://img.shields.io/github/license/Bill-Haku/kawaii-gcc)
+![GitHub Repo stars]([https://img.shields.io/github/stars/Bill-Haku/kawaii-gcc](https://github.com/JoyinJoester/Let-your-GCC-fly-)) ![GitHub contributors](https://img.shields.io/github/contributors/Bill-Haku/kawaii-gcc) ![GitHub License](https://img.shields.io/github/license/Bill-Haku/kawaii-gcc)
 
 Make your GCC compiler kawaii~!
 
