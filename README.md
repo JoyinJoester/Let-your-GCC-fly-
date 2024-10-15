@@ -1,5 +1,5 @@
 # 让你的GCC飞起来！！！
-<p align="center">![](https://count.getloli.com/get/@JoyinJoester.github.Let-your-GCC-fly-)</p>
+![](https://count.getloli.com/get/@JoyinJoester.github.Let-your-GCC-fly-)
 
 ## How to use it?
 ### Linux (in an Ubuntu example)
