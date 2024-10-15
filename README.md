@@ -1,4 +1,4 @@
-# Kawaii-gcc かわいいGCC
+# 让你的GCC飞起来！！！
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Bill-Haku/kawaii-gcc) ![GitHub contributors](https://img.shields.io/github/contributors/Bill-Haku/kawaii-gcc) ![GitHub License](https://img.shields.io/github/license/Bill-Haku/kawaii-gcc)
 
