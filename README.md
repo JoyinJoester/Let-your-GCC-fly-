@@ -1,14 +1,6 @@
 # 让你的GCC飞起来！！！
 
 
-Make your GCC compiler kawaii~!
-
-This project makes the output messages from GCC compiler looks kawaii by editing the localization file of GCC.
-
-Everyone is welcomed to contribute and add more kawaii messages!
-
-[中文版](./README-zh.md)（更改为中文时请优先阅读）
-
 ## How to use it?
 ### Linux (in an Ubuntu example)
 
