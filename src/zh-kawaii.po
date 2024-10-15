@@ -33,56 +33,56 @@ msgid "invalid conversion from type %<__vector_pair%>"
 msgstr "从%<__fpreg%>的转换是无效的喵~"
 
 msgid "expected %<;%>"
-msgstr "需要%<;%>，请添加上它并对它道歉！"
+msgstr "需要%<;%>，听懂没，别装b！"
 
 msgid "expected %<]%>"
-msgstr "需要%<]%>，请添加上它并对它道歉！"
+msgstr "需要%<]%>，听懂没，别装b"
 
 msgid "expected %<;%>, %<,%> or %<)%>"
-msgstr "需要 %<;%>、%<,%> 或 %<)%>，请添加上它并对它道歉！"
+msgstr "需要 %<;%>、%<,%> 或 %<)%>，听懂没，别装b"
 
 #. Look for the two `(' tokens.
 msgid "expected %<(%>"
-msgstr "需要%<(%>，请添加上它并对它道歉！"
+msgstr "需要%<(%>，听懂没，别装b"
 
 msgid "expected %<[%>"
-msgstr "需要%<[%>，请添加上它并对它道歉！"
+msgstr "需要%<[%>，听懂没，别装b"
 
 msgid "expected %<{%>"
-msgstr "需要%<{%>，请添加上它并对它道歉！"
+msgstr "需要%<{%>，听懂没，别装b"
 
 msgid "expected %<:%>"
-msgstr "需要 %<:%>，请添加上它并对它道歉！"
+msgstr "需要 %<:%>，听懂没，别装b"
 
 msgid "expected %<while%>"
-msgstr "需要 %<while%>，请添加上它并对它道歉！"
+msgstr "需要 %<while%>，听懂没，别装b"
 
 msgid "expected %<,%>"
-msgstr "需要 %<,%>，请添加上它并对它道歉！"
+msgstr "需要 %<,%>，听懂没，别装b"
 
 msgid "expected %<.%>"
-msgstr "需要%<.%>，请添加上它并对它道歉！"
+msgstr "需要%<.%>，听懂没，别装b"
 
 msgid "expected %<@end%>"
-msgstr "需要 %<@end%>，请添加上它并对它道歉！"
+msgstr "需要 %<@end%>，听懂没，别装b"
 
 msgid "expected %<>%>"
-msgstr "需要 %<>%>，请添加上它并对它道歉！"
+msgstr "需要 %<>%>，听懂没，别装b"
 
 msgid "expected %<,%> or %<)%>"
-msgstr "需要 %<,%> 或 %<)%>，请添加上它并对它道歉！"
+msgstr "需要 %<,%> 或 %<)%>，听懂没，别装b"
 
 msgid "expected %<=%>"
-msgstr "需要%<=%>，请添加上它并对它道歉！"
+msgstr "需要%<=%>，听懂没，别装b"
 
 msgid "expected %<}%>"
-msgstr "需要 %<}%>，请添加上它并对它道歉！"
+msgstr "需要 %<}%>，听懂没，别装b"
 
 msgid "expected %<else%>"
-msgstr "需要%<delete%>，请添加上它并对它道歉！"
+msgstr "需要%<delete%>，听懂没，别装b"
 
 msgid "expected %<#pragma omp section%> or %<}%>"
-msgstr "需要%<#pragma omp section%>或%<}%>，请添加上它并对它道歉！"
+msgstr "需要%<#pragma omp section%>或%<}%>，听懂没，别装b！！"
 
 msgid ""
 "%s %<%s%.*s%> expects argument of type %<%s%s%>, but argument %d has type %qT"
