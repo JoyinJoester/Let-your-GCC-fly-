@@ -27,7 +27,7 @@
     ```
 
 
-注意：根据主版本号为数字几就修改gcc-<number>中的<number>为多少
+注意：根据gcc-v所查的主版本号为数字几就修改gcc-<number>中的<number>为多少，如果主版本号为11.3那么主版本号就是11，<number>就是11即gcc-11
 ```bash
 sudo apt-get install gcc-<number>-locales
 ```
