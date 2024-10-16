@@ -26,12 +26,12 @@
     gcc -v
     ```
 
-  --我这里是12.3.0.所以我的主版本号是12，安装`gcc-12-locales`
-（即主版本号为数字几就修改gcc-<number>中的number为多少，如果你同样是主版本号为12的gcc那么你可以直接复制使用）
 
-    ```bash
-    sudo apt-get install gcc-12-locales
-    ```
+注意：根据主版本号为数字几就修改gcc-<number>中的<number>为多少
+```bash
+sudo apt-get install gcc-<number>-locales
+```
+
 
 - 找到你的语言文件的路径。默认会在 `/usr/share/locale/zh_CN/LC_MESSAGES/gcc.mo`. 不过你也有可能找不到该文件或者找到名为`gcc-12.mo`的文件。如果已有相关文件，备份之。 (eg. `sudo mv gcc-12.mo gcc-12.mo.bak`) 如果没有相关文件，无需担心，什么都不需要做。
 
