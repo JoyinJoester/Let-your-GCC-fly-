@@ -6,98 +6,115 @@
 ### Linux (Ubuntu示例)
 大多数Linux发行版已经内置了gcc所以安装gcc这一步可以直接省略
 
-- Install Japanese for your terminal (if not installed)
+- 安装中文 (如果没有安装)
 
     ```bash
-    sudo apt-get install language-pack-ja language-pack-gnome-ja language-pack-ja-base language-pack-gnome-ja-base
+    sudo apt-get install language-pack-zh-hans language-pack-zh-hans-base
     ```
 
-- Install `gcc` ,  `gettext` and `g++`.
+- 安装 `gcc` ,  `gettext` 和 `g++`.
 
     ```bash
     sudo apt-get install gcc gettext g++
     ```
 
-- Install `gcc locales`
+- 安装 `gcc locales`
 
-    Check your gcc main version number by:
+    通过以下命令检查你的`gcc`版本号
 
     ```bash
     gcc -v
     ```
 
-    It is 12.3.0 on my end. So the main version number is 12.
+    我这里是12.3.0.所以我的主版本号是12，安装`gcc-12-locales`
 
     ```bash
     sudo apt-get install gcc-12-locales
     ```
 
-- Find your gcc language file. Defaultly, it should be found in `/usr/share/locale/ja/LC_MESSAGES/gcc.mo`. However, it is also possible that you cannot find the file or the file is named as `gcc-12.mo`. If there's a related file, back up it. (eg. `sudo mv gcc-12.mo gcc-12.mo.bak`) Don't worry if there's no such file, you need to do nothing.
+- 找到你的语言文件的路径。默认会在 `/usr/share/locale/zh_CN/LC_MESSAGES/gcc.mo`. 不过你也有可能找不到该文件或者找到名为`gcc-12.mo`的文件。如果已有相关文件，备份之。 (eg. `sudo mv gcc-12.mo gcc-12.mo.bak`) 如果没有相关文件，无需担心，什么都不需要做。
 
-- Use the following command to download the `mo` file in the project and copy it to the path.
-
-    ```bash
-    sudo wget https://github.com/Bill-Haku/kawaii-gcc/raw/main/prebuilt/gcc.mo -O /usr/share/locale/ja/LC_MESSAGES/gcc-12.mo
-    ```
-
-    > The `gcc.po` is the localization file for ja_JP, and the `gcc-zh.po` is the localization file for zh_CN. See the [Chinese version README](./README-zh.md) document for more details.
-
-    You can also rebuild the binary file by yourself:
+- 通过以下命令下载仓库中的`mo` 文件然后将其复制到刚才的路径去。
 
     ```bash
-    msgfmt gcc.po -o gcc.mo
-    sudo cp gcc.mo /usr/share/locale/ja/LC_MESSAGES/gcc-12.mo
+     sudo wget https://github.com/Bill-Haku/kawaii-gcc/raw/main/prebuilt/gcc-zh.mo -O /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
     ```
 
-    Regarding to the file name:
+    您也可以自行重新编译该二进制文件：
 
-    - If you found an existed file in the last step, use the existed file name.
-    - if not, try `gcc-<MAIN VERSION NUMBER>.mo` first, and if it doesn't work, rename it to `gcc.mo`.
+    ```bash
+    make merge-zh
+    msgfmt gcc-zh.po -o gcc.mo
+    sudo cp gcc.mo /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
+    ```
+    或
+    ```bash
+    make
+    ```
 
-- Change terminal environmental variables into Japanese:
+    关于文件名：
+
+    - 如果你在上个步骤找到了相关文件，请直接使用原本的名字。
+    - 如果没有，首先使用 `gcc-<主版本号>.mo` 。如果发现不起作用，将其重命名为 `gcc.mo`.
+
+- 修改环境变量以将终端语言改为中文：
 
     ```bash
     vim ~/.bashrc
     
     # Add the following lines
-    export LANG="ja_JP.UTF-8"
-    export LANGUAGE="ja_JP.UTF-8"
+    export LANG="zh_CN.UTF-8"
+    export LANGUAGE="zh_CN.UTF-8"
     # Save it in Vim
 
     source ~/.bashrc
     ```
 
-- Now your GCC has become kawaii~!
+- 现在你的GCC已经变得可爱了。
 
-    You can have a try with the `test.cc` provided in the project.
+    你可以使用附带的 `test.cc` 来试试效果。
 
     ```bash
     gcc test.cc -Wall
-    # -Wall makes GCC output all the warning messages.
+    # -Wall 表示让GCC输出所有警告信息
     ```
 
 ### Windows
 
-- Install [Cygwin](https://www.cygwin.com)
+1. 安装 [Cygwin](https://www.cygwin.com/)。  
+   步骤：
+    1. 下载并运行 [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe)
+    2. 在 `选择下载源` (`Choose A Download Source`) 步骤时选择 `从互联网安装` (`Install from Internet`)  
+    ![install_from_internet.png](img/install_from_internet.png)
+    3. 在 `选择软件包` (`Select Packages`) 步骤时, 将`查看` (`View`) 设为 `类别` (`Category`) 并依次搜索 (Search) 并选择 ALL/Devel 下的 `gcc-core`，`gcc-g++` 和 `gettext` 的版本
+    ![select_packages.png](img/select_packages.png)
 
-    - Download and run [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe)
+2. 假设你的 Cygwin 安装目录 (注意不是软件包下载目录) 为 `<DIR>` (默认应该是 `C:\cygwin`), 将目录 `<DIR>\bin` 目录添加到环境变量 `Path` 中 (如果 `Path` 中已经有 mingw 了, 请删除或者移到`<DIR>\bin`的下方), 并额外增加一条环境变量 `LANG`, 设置为 `zh_CN.UTF-8`
 
-    - Choose `Install from Internet` at the step of `Select Packages`.
-
-    - At the step of `Select Packages`, Set `View` as `Category` and search and select the versions of `gcc-core`, `gcc-g++` and `gettext` under the ALL/Devel panel.
-
-- Suppose your `Cygwin` install directory is `<DIR>` (Defaultly it should be `C:\cygwin`), add the directory `<DIR>\bin` to the Environment Variable `Path`. If there's `mingw` in the `Path`, delete it or move it under the `<DIR>\bin`. Add another Environment Variable `LANG`, and set the value of it into `ja_JP.UTF-8`.
-
-- Move the `gcc.mo` file in the `./prebuilt` directory of this repository to `<DIR>\usr\share\locale\ja\LC_MESSAGES`, keep naming it as `gcc.mo`. Backuping the existed `gcc.mo` file is suggested.
+3. 将本仓库的 `prebuilt` 目录下的 `gcc-zh.mo` 放到 `<DIR>\usr\share\locale\zh_CN\LC_MESSAGES` 目录下, 并将其重命名为 `gcc.mo` (建议先将原来的gcc.mo备份)  
+    ![change_gcc_mo.png](img/change_gcc_mo.png)
 
 ### macOS
 
-Not implemented yet. Contribution welcomed!
+暂未实现。欢迎贡献。
+
+## 如何修改/贡献
+
+前往`./src`目录，使用文本编辑器打开并编辑`zh-kawaii.po`。可以修改已有的内容，也可以根据原始简体中文本地化文件增加新内容。编辑完成后运行`make`指令合并文件，并将其编译成`mo`文件后拷贝到指定的地方。
+
+#### 关于`src`目录下的文件
+
+- `zh_CN.po`: GNU提供的原始简体中文版本地化文件。
+- `zh_kawaii.po`: 本项目已修改的本地化内容。
+
+#### 如果您愿意参与贡献本项目
+
+请在PR时将您修改完成的编译好的`mo`文件放在`../prebuilt`目录下，以更新预编译好的本地化二进制文件。
 
 ## Star History
 
 ![Star History Chart](https://api.star-history.com/svg?repos=Bill-Haku/kawaii-gcc&type=Date)
 
-## Special Thanks
+## 特别鸣谢
 
-This project is inspired by [`gcc-hentai`](https://github.com/Mosklia/gcc-hentai). It was a Chinese project, and I created this repo to make a Japanese version and share it to Japanese users. I added the new text, edited and completed some details in the use instructions, and made a video in Japanese to share it. The video got unexpected attention in Chinese users on Bilibili, so I added contents of Chinese in it. Thanks for the sharing and the open-source spirit of the original authors.
+本项目的灵感来自[`gcc-hentai`](https://github.com/Mosklia/gcc-hentai)项目。为了将其推广到日语区，我创建了本仓库、制作了日语版并修改完善了使用说明的诸多细节，最后制作了完全日语的宣传视频发布在YouTube，不料却在Bilibili获得了关注。十分感谢原作者的分享和开源精神。
