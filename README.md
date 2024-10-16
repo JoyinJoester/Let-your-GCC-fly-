@@ -3,8 +3,8 @@
 本项目fork自Bill-Haku/kawaii-gcc，故与之为同原理实现，即通过对gcc的输出信息的文字作修改从而实现
 ## 让你知道什么叫“让你的GCC飞起来”，啊米诺斯！！噩梦缠绕！！！
 原文已经描述过如何使用在这里我只是对原文进行稍作修改
-### Linux (in an Ubuntu example)
-
+### Linux (Ubuntu示例)
+大多数Linux发行版已经内置了gcc所以安装gcc这一步可以直接省略
 
 - Install Japanese for your terminal (if not installed)
 
