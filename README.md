@@ -26,7 +26,7 @@
     gcc -v
     ```
 
-    我这里是12.3.0.所以我的主版本号是12，安装`gcc-12-locales`
+    我这里是12.3.0.所以我的主版本号是12，安装`gcc-12-locales`（即主版本号为数字几就修改gcc-<number>中的number为多少，如果你同样是主版本号为12的gcc那么你可以直接复制使用）
 
     ```bash
     sudo apt-get install gcc-12-locales
