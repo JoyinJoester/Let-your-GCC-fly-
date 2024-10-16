@@ -38,7 +38,7 @@ sudo apt-get install gcc-<number>-locales
 - 通过以下命令下载仓库中的`mo` 文件然后将其复制到刚才的路径去。
 
     ```bash
-     sudo wget https://github.com/Bill-Haku/kawaii-gcc/raw/main/prebuilt/gcc-zh.mo -O /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
+     sudo wget https://github.com/JoyinJoester/Let-your-GCC-fly-/edit/prebuilt/gcc-zh.mo -O /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
     ```
     关于文件名：
 
