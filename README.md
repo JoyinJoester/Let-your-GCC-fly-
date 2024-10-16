@@ -40,19 +40,6 @@ sudo apt-get install gcc-<number>-locales
     ```bash
      sudo wget https://github.com/Bill-Haku/kawaii-gcc/raw/main/prebuilt/gcc-zh.mo -O /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
     ```
-
-    您也可以自行重新编译该二进制文件：
-
-    ```bash
-    make merge-zh
-    msgfmt gcc-zh.po -o gcc.mo
-    sudo cp gcc.mo /usr/share/locale/zh_CN/LC_MESSAGES/gcc-12.mo
-    ```
-    或
-    ```bash
-    make
-    ```
-
     关于文件名：
 
     - 如果你在上个步骤找到了相关文件，请直接使用原本的名字。
@@ -71,7 +58,7 @@ sudo apt-get install gcc-<number>-locales
     source ~/.bashrc
     ```
 
-- 现在你的GCC已经变得可爱了。
+- ~~现在你的GCC已经变得可爱了。~~ 现在你的gcc已经飞起来了
 
     你可以使用附带的 `test.cc` 来试试效果。
 
