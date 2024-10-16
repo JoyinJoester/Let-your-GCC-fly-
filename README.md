@@ -1,10 +1,10 @@
 # 让你的GCC飞起来！！！
 ![](https://count.getloli.com/get/@JoyinJoester.github.Let-your-GCC-fly-)
-
-## 让你知道什么叫“让你的GCC飞起来”，草泥马的！！噩梦缠绕！！！
+本项目fork自Bill-Haku/kawaii-gcc，故与之为同原理实现，即通过对gcc的输出信息的文字作修改从而实现
+## 让你知道什么叫“让你的GCC飞起来”，啊米诺斯！！噩梦缠绕！！！
+原文已经描述过如何使用在这里我只是对原文进行稍作修改
 ### Linux (in an Ubuntu example)
 
-> [Demo Video on YouTube(Japanese)](https://youtu.be/ASWBU8HhvY0)
 
 - Install Japanese for your terminal (if not installed)
 
