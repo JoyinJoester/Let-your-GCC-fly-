@@ -6,7 +6,7 @@
 ### Linux (Ubuntu示例)
 大多数Linux发行版已经内置了gcc所以安装gcc这一步可以直接省略
 
-- 安装中文 (如果没有安装)
+- 安装中文
 
     ```bash
     sudo apt-get install language-pack-zh-hans language-pack-zh-hans-base
