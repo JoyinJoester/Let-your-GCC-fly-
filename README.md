@@ -81,5 +81,5 @@ sudo apt-get install gcc-<number>-locales
 
 3. 将本仓库的 `prebuilt` 目录下的 `gcc-zh.mo` 放到 `<DIR>\usr\share\locale\zh_CN\LC_MESSAGES` 目录下, 并将其重命名为 `gcc.mo` (建议先将原来的gcc.mo备份)  
     ![change_gcc_mo.png](img/change_gcc_mo.png)
-###Mac
+### Mac
 是不是给你脸了小逼崽子，原文都没有mac你让我个修改的有Mac，阿米诺斯，让你知道什么叫噩梦缠绕！！！
