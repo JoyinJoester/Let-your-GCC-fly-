@@ -1,4 +1,4 @@
-# 让你的GCC飞起来！！！
+# 让你的GCC飞起来！！！（待补完）
 ![](https://count.getloli.com/get/@JoyinJoester.github.Let-your-GCC-fly-)
 本项目fork自Bill-Haku/kawaii-gcc，故与之为同原理实现，即通过对gcc的输出信息的文字作修改从而实现
 ## 让你知道什么叫“让你的GCC飞起来”，啊米诺斯！！噩梦缠绕！！！
