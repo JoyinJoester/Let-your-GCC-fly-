@@ -83,3 +83,5 @@ sudo apt-get install gcc-<number>-locales
     ![change_gcc_mo.png](img/change_gcc_mo.png)
 ### Mac
 是不是给你脸了小逼崽子，原文都没有mac你让我个修改的有Mac，阿米诺斯，让你知道什么叫噩梦缠绕！！！
+### 致谢
+   在这里特别感谢原作者的有趣项目，这个终归只是一个娱乐性的项目，请大家注意素质，不要跟着编译信息学，听到没有！不然让你知道知道什么叫黑手！
