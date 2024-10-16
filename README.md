@@ -1,7 +1,7 @@
 # 让你的GCC飞起来！！！
 ![](https://count.getloli.com/get/@JoyinJoester.github.Let-your-GCC-fly-)
 
-## How to use it?
+## 让你知道什么叫GCC，草泥马的！！噩梦缠绕！！！?
 ### Linux (in an Ubuntu example)
 
 > [Demo Video on YouTube(Japanese)](https://youtu.be/ASWBU8HhvY0)
